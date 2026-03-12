@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"          # Using npm ecosystem for Bun compatibility
+    directory: "/"                    # Root directory where package.json is located
+    schedule:
+      interval: "daily"              # Runs daily as requested
+    target-branch: "main"            # Optional: specify your main branch (adjust if different)
+    open-pull-requests-limit: 10     # Optional: limits open PRs to avoid clutter

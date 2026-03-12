@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2017",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./*"],
+      "@/queries/*": ["./queries/*"],
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/types/*": ["./types/*"],
+      "@/stores/*": ["./stores/*"],
+      "@/hooks/*": ["./hooks/*"],
+     "@/endpoints": ["./endpoints/index.ts"],
+      "@/endpoints/*": ["./endpoints/*"],
+      "@/public/*": ["./public/*"],
+      "@/app/*": ["./app/*"],
+      "@/appointments/*": ["./app/(protected)/appointments/*"],
+      "@/appointment-list/*": ["./app/(protected)/appointments/appointment-list/*"],
+      "@/book-appointment/*": ["./app/(protected)/appointments/book-appointment/*"]
+    },
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
